@@ -1,0 +1,116 @@
+.askme-layout {
+  display: flex;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(135deg, #181c2f 0%, #232526 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #00f2fe30;
+  overflow: hidden;
+}
+
+.askme-contexts {
+  width: 260px;
+  background: linear-gradient(135deg, #232526 0%, #232f3e 100%);
+  color: #fff;
+  padding: 2rem 1rem;
+  border-right: 2px solid #00f2fe;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.askme-contexts h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #00f2fe;
+  letter-spacing: 1px;
+}
+.askme-contexts ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  width: 100%;
+}
+.askme-contexts li {
+  margin-bottom: 1rem;
+}
+.askme-contexts button {
+  width: 100%;
+  padding: 0.7rem 1rem;
+  background: none;
+  border: 2px solid transparent;
+  border-radius: 6px;
+  color: #00f2fe;
+  font-size: 1rem;
+  font-weight: 600;
+  letter-spacing: 0.5px;
+  cursor: pointer;
+  transition: background 0.2s, border 0.2s, color 0.2s;
+  text-align: left;
+}
+.askme-contexts button.active,
+.askme-contexts button:hover {
+  background: rgba(0,242,254,0.08);
+  border: 2px solid #00f2fe;
+  color: #fff;
+}
+
+.askme-chat {
+  flex: 1 1 0;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #232526 0%, #0f2027 100%);
+  color: #fff;
+}
+.askme-chat h3 {
+  margin-top: 0;
+  margin-bottom: 1.5rem;
+  font-size: 1.2rem;
+  color: #00f2fe;
+  letter-spacing: 1px;
+}
+.chat-window {
+  flex: 1 1 0;
+  background: #181c2f;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px #00f2fe20;
+  padding: 2rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.chat-placeholder {
+  color: #00f2fe;
+  font-size: 1.1rem;
+  opacity: 0.7;
+}
+
+@media (max-width: 900px) {
+  .askme-layout {
+    flex-direction: column;
+  }
+  .askme-contexts {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #00f2fe;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+  }
+  .askme-contexts ul {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    gap: 0.5rem;
+  }
+  .askme-contexts li {
+    margin-bottom: 0;
+  }
+  .askme-chat {
+    padding: 1rem;
+  }
+  .chat-window {
+    padding: 1rem;
+  }
+} 

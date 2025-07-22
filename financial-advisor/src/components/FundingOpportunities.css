@@ -1,0 +1,66 @@
+.funding-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 2rem;
+  width: 100%;
+  margin: 0 auto;
+  padding: 2rem 0;
+}
+.funding-col {
+  background: #181c2f;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #00f2fe30;
+  padding: 2rem 1.5rem;
+  border-top: 4px solid #00f2fe;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+}
+.funding-col h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #00f2fe;
+  font-size: 1.1rem;
+  letter-spacing: 1px;
+}
+.funding-col ul {
+  list-style: disc inside;
+  padding: 0;
+  margin: 0;
+  color: #fff;
+}
+.funding-col li {
+  margin-bottom: 0.7rem;
+  font-size: 1.05rem;
+  opacity: 0.95;
+}
+.funding-link {
+  color: #00f2fe;
+  text-decoration: none;
+  font-weight: 600;
+  font-size: 1.05rem;
+  transition: color 0.2s, text-shadow 0.2s;
+  text-shadow: 0 0 8px #00f2fe80, 0 0 2px #fff;
+}
+.funding-link:hover {
+  color: #fff;
+  text-shadow: 0 0 16px #00f2fe, 0 0 8px #4facfe;
+  text-decoration: underline;
+}
+@media (max-width: 1100px) {
+  .funding-grid {
+    grid-template-columns: 1fr 1fr;
+    gap: 1.2rem;
+  }
+}
+@media (max-width: 700px) {
+  .funding-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+    padding: 1rem 0;
+  }
+  .funding-col {
+    padding: 1.2rem 0.7rem;
+  }
+} 

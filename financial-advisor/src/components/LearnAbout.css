@@ -1,0 +1,74 @@
+.learnabout-layout {
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  height: 100%;
+}
+
+.learnabout-filters {
+  display: flex;
+  gap: 1rem;
+  margin-bottom: 2rem;
+  flex-wrap: wrap;
+}
+.learnabout-filters button {
+  background: none;
+  border: 2px solid #00f2fe;
+  color: #00f2fe;
+  font-size: 1rem;
+  font-weight: 600;
+  padding: 0.6rem 1.2rem;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background 0.2s, color 0.2s;
+}
+.learnabout-filters button.active,
+.learnabout-filters button:hover {
+  background: #00f2fe;
+  color: #181c2f;
+}
+
+.learnabout-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+.learnabout-video {
+  background: #181c2f;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #00f2fe30;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  align-items: stretch;
+  transition: box-shadow 0.2s;
+}
+.learnabout-video:hover {
+  box-shadow: 0 4px 24px #00f2fe80;
+}
+.video-thumb {
+  width: 100%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-bottom: 1rem;
+  background: #232526;
+}
+.video-title {
+  color: #00f2fe;
+  font-size: 1.1rem;
+  font-weight: 600;
+  text-align: center;
+  margin-top: 0.5rem;
+}
+
+@media (max-width: 700px) {
+  .learnabout-grid {
+    grid-template-columns: 1fr;
+    gap: 1rem;
+  }
+  .learnabout-filters {
+    gap: 0.5rem;
+    margin-bottom: 1rem;
+  }
+} 

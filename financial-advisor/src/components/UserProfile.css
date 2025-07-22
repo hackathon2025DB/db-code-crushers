@@ -1,0 +1,30 @@
+.userprofile-layout {
+  display: flex;
+  flex-direction: column;
+  gap: 2rem;
+  width: 100%;
+  max-width: 700px;
+  margin: 0 auto;
+}
+.userprofile-section {
+  background: #181c2f;
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #00f2fe30;
+  padding: 2rem 2.5rem;
+  border-left: 4px solid #00f2fe;
+  color: #fff;
+}
+.userprofile-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #00f2fe;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.userprofile-content {
+  display: flex;
+  flex-direction: column;
+  gap: 0.7rem;
+  font-size: 1.05rem;
+  color: #fff;
+} 

@@ -1,0 +1,109 @@
+.budgeting-layout {
+  display: flex;
+  height: 100%;
+  min-height: 400px;
+  background: linear-gradient(135deg, #181c2f 0%, #232526 100%);
+  border-radius: 12px;
+  box-shadow: 0 2px 16px #00f2fe30;
+  overflow: hidden;
+  width: 100%;
+}
+.budgeting-controls {
+  width: 300px;
+  background: linear-gradient(135deg, #232526 0%, #232f3e 100%);
+  color: #fff;
+  padding: 2rem 1.5rem;
+  border-right: 2px solid #00f2fe;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: flex-start;
+  box-sizing: border-box;
+}
+.budgeting-controls h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #00f2fe;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.budgeting-controls label {
+  display: block;
+  font-size: 1rem;
+  color: #fff;
+  width: 100%;
+}
+.budgeting-controls select {
+  display: block;
+  margin-top: 0.5rem;
+  width: 100%;
+  padding: 0.5rem;
+  border-radius: 6px;
+  border: 2px solid #00f2fe;
+  background: #181c2f;
+  color: #00f2fe;
+  font-size: 1rem;
+}
+.budgeting-table-section {
+  flex: 1 1 0;
+  padding: 2rem 2.5rem;
+  display: flex;
+  flex-direction: column;
+  background: linear-gradient(135deg, #232526 0%, #0f2027 100%);
+  color: #fff;
+  min-width: 0;
+  height: 100%;
+  overflow-x: auto;
+}
+.budgeting-table-section h3 {
+  margin-top: 0;
+  margin-bottom: 1.2rem;
+  color: #00f2fe;
+  font-size: 1.2rem;
+  letter-spacing: 1px;
+}
+.budgeting-table {
+  width: 100%;
+  border-collapse: collapse;
+  background: #181c2f;
+  border-radius: 10px;
+  box-shadow: 0 2px 12px #00f2fe30;
+  overflow: hidden;
+}
+.budgeting-table th, .budgeting-table td {
+  padding: 1rem 1.2rem;
+  text-align: left;
+  font-size: 1.05rem;
+}
+.budgeting-table th {
+  background: #232f3e;
+  color: #00f2fe;
+  font-weight: 700;
+  border-bottom: 2px solid #00f2fe;
+}
+.budgeting-table tr:not(:last-child) td {
+  border-bottom: 1px solid #232f3e;
+}
+.budgeting-table td {
+  color: #fff;
+}
+@media (max-width: 900px) {
+  .budgeting-layout {
+    flex-direction: column;
+  }
+  .budgeting-controls {
+    width: 100%;
+    border-right: none;
+    border-bottom: 2px solid #00f2fe;
+    flex-direction: row;
+    align-items: flex-start;
+    padding: 1rem 0.5rem;
+    gap: 1rem;
+  }
+  .budgeting-table-section {
+    padding: 1rem;
+  }
+  .budgeting-table th, .budgeting-table td {
+    padding: 0.7rem 0.5rem;
+  }
+} 
