@@ -92,8 +92,8 @@
 }
 
 .sidebar {
-  width: 220px;
-  min-width: 60px;
+  width: 270px;
+  min-width: 120px;
   background: linear-gradient(135deg, #232526 0%, #414345 100%);
   color: #fff;
   box-shadow: 2px 0 16px 0 #00f2fe40;
@@ -139,6 +139,11 @@
   text-shadow: 0 0 16px #00f2fe, 0 0 8px #4facfe;
   background: rgba(0,242,254,0.08);
 }
+.sidebar a.active {
+  background: #00f2fe;
+  color: #181c2f;
+  text-shadow: 0 0 16px #00f2fe, 0 0 8px #4facfe;
+}
 .nav-icon {
   display: flex;
   align-items: center;
@@ -148,7 +153,8 @@
   color: #00f2fe;
 }
 .nav-label {
-  white-space: nowrap;
+  white-space: normal;
+  word-break: break-word;
   transition: opacity 0.2s, width 0.2s;
 }
 

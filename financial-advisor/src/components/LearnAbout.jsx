@@ -9,12 +9,14 @@ const TOPICS = [
 ];
 
 const VIDEOS = [
-  { id: '1', topic: 'loan', title: 'How to Avail a Loan', youtubeId: 'dQw4w9WgXcQ' },
-  { id: '2', topic: 'tax', title: 'Tax Filing Basics', youtubeId: '3JZ_D3ELwOQ' },
-  { id: '3', topic: 'gst', title: 'GST Benefits Explained', youtubeId: 'L_jWHffIx5E' },
-  { id: '4', topic: 'loan', title: 'Loan Eligibility Tips', youtubeId: 'eY52Zsg-KVI' },
-  { id: '5', topic: 'tax', title: 'Tax Saving Investments', youtubeId: 'V-_O7nl0Ii0' },
-  { id: '6', topic: 'gst', title: 'GST for Small Businesses', youtubeId: 'hY7m5jjJ9mM' },
+  { id: '1', topic: 'loan', title: 'How to Avail a Loan', youtubeId: 'j6z8yOq6FXI' },
+  { id: '2', topic: 'tax', title: 'Tax Filing Basics', youtubeId: 'zXUrjkwr4JE' },
+  { id: '3', topic: 'gst', title: 'GST Benefits Explained', youtubeId: 'gqA22c0sNyk' },
+  // { id: '4', topic: 'loan', title: 'Loan Eligibility Tips', youtubeId: 'eY52Zsg-KVI' },
+  { id: '5', topic: 'tax', title: 'Tax Saving', youtubeId: '3v9hFUq4of0' },
+  { id: '6', topic: 'gst', title: 'GST for Small Businesses', youtubeId: 'SiK1ULfJaEE' },
+  { id: '7', topic: 'loan', title: 'PMEGP Loan Process', youtubeId: '9blKZSihu28' },
+
 ];
 
 export default function LearnAbout() {
